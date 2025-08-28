@@ -1,0 +1,180 @@
+
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hind madurai font */
+.hind-madurai-light {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hind-madurai-regular {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hind-madurai-medium {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hind-madurai-semibold {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hind-madurai-bold {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* roboto font */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* inter font */
+.inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ======== Styling for the main header container ======== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #fff;
+}
+
+/* logo side of navbar */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-section img {
+    height: 48px;
+}
+.logo-section p {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #006747;
+    margin: 0;
+    line-height: 0.9;
+
+}
+
+/* action side of navbar  */
+.action-section {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+}
+
+.action-section i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.action-section img {
+    height: 20px; 
+}
+
+.action-section span {
+    font-weight: bold;
+}
+
+/* ======== Hero section styles ========== */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+            #013223,   /* dark green left */
+            #006747,   /* light green middle */
+            #013223    /* dark green right */
+    );
+    color: #fff;
+    padding:20px 0px;
+
+}
+
+.hero-content img {
+    width: 70px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+/* ========= responsiveness starts here =========== */
+
+@media (max-width: 768px) {
+    /* ======== Navbar Section ======== */
+    .navbar {
+        flex-direction: row; 
+        padding: 1rem; 
+    }
+
+    .logo-section {
+        margin-bottom: 10px; 
+    }
+
+    .action-section {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 20px; 
+    }
+
+    /* ======== Hero Section ======== */
+    .hero-section {
+        padding: 20px 10px; 
+    }
+
+    .hero-content h1 {
+        font-size: 24px; 
+    }
+
+    .hero-content p {
+        font-size: 14px; 
+    }
+}
+
+
+
+
+
+
+
+
