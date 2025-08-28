@@ -81,6 +81,18 @@
     line-height: 0.9;
 
 }
+.copy-btn1 {
+    background: #16a34a;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 35px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.copy-btn1:hover {
+    background: #199647;
+}
 
 /* action side of navbar  */
 .action-section {
@@ -135,8 +147,187 @@
 }
 
 
+/* MAIN STYLE */
 
+/* CARDS STYLE */
+.main-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 50px;
+    gap: 100px;
+}
 
+/* Card Section */
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FFE3E2;
+    border-radius: 16%;
+    /* opacity: 0.5; */
+}
+
+.card-iconBlue{
+    width: 40px;
+    height: 40px;
+    background-color: #DFEFFF;
+    border-radius: 16%;
+}
+
+.card-heart {
+    font-size: 22px;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.service-name {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.service-name-en {
+    font-size: 20px;
+    color: grey;
+}
+
+.hotline-number {
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.category-badge {
+    display: inline-block;
+    background: #e8f5e9;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.copy-btn, .call-btn {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.copy-btn {
+    background: #f1f3f4;
+    color: grey;
+}
+.copy-btn:hover {
+    background: #d0e4f8;
+}
+
+.call-btn {
+    background: #16a34a;
+    color: white;
+}
+.call-btn:hover {
+    background: #199647;
+}
+
+/* =========== Call history section =================== */
+
+.call-history {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.call-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-history h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.clear-btn {
+    background: #00A63E;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.clear-btn:hover {
+    background: #009639;
+}
+.history-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-service {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.history-number {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: #333;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    font-family: Roboto, sans-serif;
+}
+
+.history-time {
+    color: #666;
+    font-size: 12px;
+}
 
 /* ========= responsiveness starts here =========== */
 
@@ -168,6 +359,16 @@
 
     .hero-content p {
         font-size: 14px; 
+    }
+
+    /* cards */
+    .card-section {
+        grid-template-columns: 1fr;
+    }
+
+    /* call history section */
+    .main-section {
+    grid-template-columns: 1fr;
     }
 }
 
