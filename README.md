@@ -1,3 +1,9 @@
+# Live Site Link
+
+- (https://taoshif1.github.io/PH-A5/)[Emergency Service Webpage]
+
+---
+
 # 💡 JavaScript Core Concepts Explained  
 
 Here are the answers to the essential JavaScript questions, detailing fundamental concepts used in building interactive web experiences like this project.  
@@ -7,6 +13,7 @@ Here are the answers to the essential JavaScript questions, detailing fundamenta
 ## 1. What is the difference between `getElementById`, `getElementsByClassName` and `querySelector / querySelectorAll`?  
 
 **Answer:**  
+
 The difference lies in their **selection methods, return values and performance. The modern `querySelector` and `querySelectorAll` are more flexible and use CSS selectors, while the older `getElementById` and `getElementsByClassName` are specialized and generally faster for their specific use cases.**.  
 
 - **`getElementById("id")`** → Selects a single element by its unique ID. Fastest for IDs.  
@@ -21,6 +28,7 @@ The difference lies in their **selection methods, return values and performance.
 ## 2. How do you create and insert a new element into the DOM?  
 
 **Answer:**  
+
 To create and insert a new element into the DOM, use `document.createElement()` and place it with methods like `appendChild()` or `insertAdjacentElement()`.  
 
 **Step 1: Create the element**  
@@ -96,36 +104,66 @@ Inside the parent's event handler, you use the `event.target` property to identi
 
 ---
 
-Emergency Hotline Service Directory 🇧🇩
-This project is an interactive web application designed as an emergency hotline service directory for Bangladesh. Users can browse various essential services, simulate calling them (which costs virtual coins!), copy their numbers to the clipboard, and track their call history in real-time. The application is built using HTML, CSS, and vanilla JavaScript, focusing on dynamic functionality and a responsive user experience.
+# About the project
 
-✨ Features
-Responsive Navbar: Features the website name & logo, a dynamic heart count for liked services, a coin count (starting at 100), and a copy count for clipboard actions.
+## 📱 Emergency Hotline Service Directory 🇧🇩
 
-Hero Section: A prominent section with a background gradient, a relevant logo, the main title "Emergency Service Directory," and a descriptive slogan.
+- This project is an interactive web application designed as an emergency hotline service directory for Bangladesh.
 
-Dynamic Card Section: Displays a minimum of 6 emergency service cards. Each card includes:
+- Users can browse essential services, simulate calling them (costs virtual coins 💰), copy their numbers 📋 and track call history 📜 — all in real-time.
 
-A relevant icon or image for the service.
+- The application is built using HTML, CSS and Vanilla JavaScript, focusing on dynamic functionality and responsive design.
 
-Service Name in Bengali and English.
+## ✨ Features
 
-The hotline number.
+- Responsive Navbar → Shows logo/name, heart count 💗, coin balance 🪙 (starts at 100), and copy count 📋.
 
-A category badge (e.g., "Police", "Health").
+- Hero Section → Attractive gradient background, logo, title “Emergency Service Directory,” and slogan.
 
-An interactive heart icon (💗) to mark favorite services.
+- Dynamic Card Section → At least 6 service cards, each with:
 
-"Copy" button to easily copy the hotline number.
+    - Service icon/image
 
-"Call" button to simulate a call, update the call history, and deduct coins.
+    - Service Name
 
-Real-time Call History: A dedicated section that dynamically updates to show all recent "called" services, including their name, number, and the exact time of the call.
+    - Hotline number ☎️
 
-Coin System: Users start with 100 virtual coins. Each "call" deducts 20 coins. If a user has less than 20 coins, they cannot make a call.
+    - Category badge (Police, Health, etc.)
 
-Copy Count: A counter in the navbar that tracks how many times a number has been copied to the clipboard.
+    - Heart button 💗 (favorites)
 
-Clear History: A button to easily wipe all entries from the call history.
+    - Copy button 📋
 
-Fully Responsive Design: The website's layout and elements adapt seamlessly to various screen sizes, from desktops to mobile devices.
+    - Call button 📞 (deducts coins, adds to history)
+
+- Real-time Call History → Shows recent calls with service name, number and exact time ⏰.
+
+- Coin System → Calls cost 20 coins. If balance < 20, calls are blocked.
+
+- Copy Count → Tracks how many times numbers are copied.
+
+- Clear History Button → Wipes the call history instantly.
+
+- Fully Responsive → Works smoothly on mobile 📱 and desktop 💻.
+
+---
+
+## 🚀 Learning Outcomes
+
+- Through this project, I learned:
+
+- How to manipulate the DOM using getElementById, querySelector, etc.
+
+- How to create new elements dynamically and insert them.
+
+- How event bubbling works and how to use event delegation.
+
+- The difference between preventDefault() and stopPropagation().
+
+- How to build an interactive UI with logic (coins, favorites, history).
+
+---
+
+## Demo / Screenshots
+
+- ![alt text](image.png)
