@@ -65,7 +65,7 @@ parentElement.appendChild(newDiv);
 ```
 ---
 
-## 3. What is Event Bubbling and how does it work?
+## 3. What is `Event Bubbling` and how does it work?
 
 **Answer:**   
 
@@ -83,7 +83,7 @@ parentElement.appendChild(newDiv);
 
 ---
 
-## 4. What is Event Delegation in JavaScript? Why is it useful?
+## 4. What is `Event Delegation` in JavaScript? Why is it useful?
 
 **Answer:**  
 
@@ -93,7 +93,7 @@ Inside the parent's event handler, you use the `event.target` property to identi
 
 ---
 
-## 5. What is the difference between preventDefault() and stopPropagation() methods?
+## 5. What is the difference between `preventDefault()` and `stopPropagation()` methods?
 
 **Answer:**  
 
@@ -117,7 +117,7 @@ Inside the parent's event handler, you use the `event.target` property to identi
 
 ## ✨ Features
 
-- Responsive Navbar → Shows logo/name, heart count 💗, coin balance 🪙 (starts at 100), and copy count 📋.
+- Responsive Navbar → Shows logo/name, heart count 💗, coin balance 🪙 (starts at 100) and copy count 📋.
 
 - Hero Section → Attractive gradient background, logo, title “Emergency Service Directory,” and slogan.
 
@@ -153,13 +153,13 @@ Inside the parent's event handler, you use the `event.target` property to identi
 
 Through this project, I learned:
 
-- How to manipulate the DOM using getElementById, querySelector, etc.
+- How to manipulate the DOM using `getElementById`, `querySelector`, etc.
 
 - How to create new elements dynamically and insert them.
 
 - How event bubbling works and how to use event delegation.
 
-- The difference between preventDefault() and stopPropagation().
+- The difference between `preventDefault()` and `stopPropagation()`.
 
 - How to build an interactive UI with logic (coins, favorites, history).
 
@@ -168,3 +168,7 @@ Through this project, I learned:
 ## Demo / Screenshots
 
 - ![alt text](image.png)
+
+---
+
+# 👨‍💻 Created by **Taoshiflex** 
