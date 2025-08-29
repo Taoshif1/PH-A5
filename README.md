@@ -58,40 +58,41 @@ parentElement.appendChild(newDiv);
 
 ## 3. What is Event Bubbling and how does it work?
 
-    **Answer:**   
-    `Event bubbling` is when an event triggered on a nested element moves up the DOM tree, firing event listeners on its parents and ancestors.
+**Answer:**   
 
-    - Phases of event propagation:
+`Event bubbling` is when an event triggered on a nested element moves up the DOM tree, firing event listeners on its parents and ancestors.
 
-        1. Capturing Phase → Event starts at the window and travels down to the target.
+- Phases of event propagation:
 
-        2. Target Phase → Event is executed on the actual target element.
+    1. Capturing Phase → Event starts at the window and travels down to the target.
 
-        3. Bubbling Phase → Event travels back up the DOM tree, triggering listeners on parent elements.
+    2. Target Phase → Event is executed on the actual target element.
 
-    **By default, addEventListener works in the bubbling phase, unless you specify otherwise**.
+    3. Bubbling Phase → Event travels back up the DOM tree, triggering listeners on parent elements.
+
+**By default, addEventListener works in the bubbling phase, unless you specify otherwise**.
 
 ---
 
 ## 4. What is Event Delegation in JavaScript? Why is it useful?
 
-    **Answer:**  
+**Answer:**  
 
-     `Event delegation` is a design pattern in JavaScript that takes advantage of `event bubbling`. Instead of attaching a separate event listener to each child element, you attach a single event listener to a common parent or ancestor element. When an event like a click occurs on a child, it "bubbles up" the DOM tree to the parent, where the single listener can catch and handle it.
+`Event delegation` is a design pattern in JavaScript that takes advantage of `event bubbling`. Instead of attaching a separate event listener to each child element, you attach a single event listener to a common parent or ancestor element. When an event like a click occurs on a child, it "bubbles up" the DOM tree to the parent, where the single listener can catch and handle it.
 
-    Inside the parent's event handler, you use the `event.target` property to identify which specific child element was originally clicked or interacted  with. 
+Inside the parent's event handler, you use the `event.target` property to identify which specific child element was originally clicked or interacted  with. 
 
 ---
 
 ## 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-    **Answer:**  
+**Answer:**  
 
-    `preventDefault()` and `stopPropagation()` are two distinct methods on the event object, each with a specific purpose. 
+`preventDefault()` and `stopPropagation()` are two distinct methods on the event object, each with a specific purpose. 
     
-    - `event.preventDefault()` prevents the default browser action for a given event, such as a form submission or a link navigation.
+- `event.preventDefault()` prevents the default browser action for a given event, such as a form submission or a link navigation.
 
-    - `event.stopPropagation()` prevents an event from propagating up (bubbling) or down (capturing) the DOM tree, stopping the event from being seen by parent or child elements. 
+- `event.stopPropagation()` prevents an event from propagating up (bubbling) or down (capturing) the DOM tree, stopping the event from being seen by parent or child elements. 
 
 ---
 
