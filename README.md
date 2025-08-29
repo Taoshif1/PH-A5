@@ -1,6 +1,7 @@
-# Live Site Link
+# 🌐 Live Site Link
 
-- (https://taoshif1.github.io/PH-A5/)[Emergency Service Webpage]
+- [Emergency Service Webpage](https://taoshif1.github.io/PH-A5/)
+
 
 ---
 
@@ -150,7 +151,7 @@ Inside the parent's event handler, you use the `event.target` property to identi
 
 ## 🚀 Learning Outcomes
 
-- Through this project, I learned:
+Through this project, I learned:
 
 - How to manipulate the DOM using getElementById, querySelector, etc.
 
